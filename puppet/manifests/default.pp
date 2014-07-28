@@ -10,5 +10,6 @@ class {'::mongodb::globals':
 class {'::mongodb::server':
 
   bind_ip => ['0.0.0.0'],
+  replset => 'rep0',
 }->
 class {'::mongodb::client': }
